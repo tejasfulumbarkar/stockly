@@ -1,0 +1,17 @@
+#see_pricing_link{
+    text-decoration: none;
+
+}
+
+.pricing_box{
+    margin-top: 7rem;
+}
+
+.para1{
+    font-size: 1.1rem;
+}
+
+.pricingimages{
+    width: 80%;
+    height: 80%;
+}
