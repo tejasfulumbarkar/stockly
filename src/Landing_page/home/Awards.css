@@ -1,0 +1,21 @@
+
+li{
+    text-decoration:none ;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.big-dots li::marker {
+  font-size: 1.5rem;   /* dot size */
+  color: black;        /* dot color */
+}
+
+
+.big-dots {
+  padding-left: 1.2rem;
+}
+
+.big-dots li {
+  padding-left: 0.5rem;
+}
