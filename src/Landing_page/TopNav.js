@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './TopNav.css'
 
 function TopNav() {
@@ -15,18 +15,22 @@ function TopNav() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
                             <li className="nav-item">
-                                <Link className="nav-link active fs-5" aria-current="page" to="/about" >About</Link>
+                                <NavLink end className={({ isActive }) => `nav-link fs-5  ${isActive ? 'is-active' : ''}`} to="/" >Home</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? 'is-active' : ''}`} to="/about" >About</NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link active fs-5" aria-current="page" to="/products">Products</Link>
+                                <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? 'is-active' : ''}`} to="/products">Products</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active fs-5" aria-current="page" to="/pricing">Pricing</Link>
+                                <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? 'is-active' : ''}`} to="/pricing">Pricing</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active fs-5" aria-current="page" to="/support">support </Link>
+                                <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? 'is-active' : ''}`} to="/support">support </NavLink>
                             </li>
                         </ul>
                         <Link to="/signup" className="btn my-btnn" role="button">Sign Up</Link>
