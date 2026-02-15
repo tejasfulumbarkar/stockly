@@ -12,14 +12,14 @@ function HomePage() {
     return (
         <>
         {/* react fragment */}
-<TopNav/>
+
 <Hero/> 
 <Awards/>
 <Stats/>
 <Pricing/>
 <Education/>
 <OpenAccount/>
-<Footer/>
+
 
       
         </>
